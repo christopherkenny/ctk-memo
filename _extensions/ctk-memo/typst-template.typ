@@ -87,9 +87,9 @@
   }
 
   if date != none {
-    align(center)[#block(inset: 1em)[
+    align(center)[
       #date
-    ]]
+    ]
   }
 
   if abstract != none {
