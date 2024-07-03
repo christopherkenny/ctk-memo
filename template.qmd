@@ -1,0 +1,19 @@
+---
+title: Research Statement
+authors:
+  - Christopher T. Kenny
+header-left: Research Statement
+header-right: Christopher T. Kenny
+format:
+  ctk-memo-typst: default
+---
+
+{{< lipsum 2 >}}
+
+## More Information
+
+{{< lipsum 3 >}}
+
+
+
+For additonal information or drafts of papers, please see [christophertkenny.com](https://christophertkenny.com).
