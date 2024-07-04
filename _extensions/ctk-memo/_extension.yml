@@ -1,5 +1,5 @@
-title: Ctk-memo
-author: Christopher Kenny
+title: ctk-memo
+author: Christopher T. Kenny
 version: 1.0.0
 quarto-required: ">=1.5.0"
 contributes:

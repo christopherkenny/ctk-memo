@@ -15,5 +15,4 @@ format:
 {{< lipsum 3 >}}
 
 
-
-For additonal information or drafts of papers, please see [christophertkenny.com](https://christophertkenny.com).
+For additional information or drafts of papers, please see [christophertkenny.com](https://christophertkenny.com).
