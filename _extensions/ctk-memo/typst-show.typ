@@ -52,7 +52,7 @@ $if(linestretch)$
   linestretch: $linestretch$,
 $endif$
 $if(linkcolor)$
-  linkcolor: [$linkcolor$],
+  linkcolor: "$linkcolor$",
 $endif$
   doc,
 )

@@ -25,7 +25,7 @@
   font: (),
   fontsize: 11pt,
   sectionnumbering: none,
-  linkcolor: ["A41034"],
+  linkcolor: "#A41034",
   linestretch: 1,
   doc,
 ) = {
@@ -61,7 +61,17 @@
   )
   set heading(numbering: sectionnumbering)
 
-  show link: set text(fill: rgb(to-string(linkcolor)))
+  show link: this => {
+    if type(this.dest) != label {
+      text(this, fill: rgb(linkcolor.replace("\\#", "#")))
+    } else {
+      text(this, fill: rgb("#0000CC"))
+    }
+  }
+
+  show ref: this => {
+    text(this, fill: rgb("#640872"))
+  }
 
   if title != none {
     align(center)[
