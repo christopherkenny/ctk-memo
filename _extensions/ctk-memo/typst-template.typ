@@ -12,6 +12,7 @@
 
 #let article(
   title: none,
+  subtitle: none,
   authors: none,
   date: none,
   abstract: none,
@@ -47,17 +48,18 @@
       #v(-8pt)
       #line(length: 100%)
     ],
-    header-ascent: 30%
+    header-ascent: 30%,
   )
   set par(
     justify: true,
-    leading: linestretch * 0.65em
+    first-line-indent: 1em,
+    leading: linestretch * 0.65em,
   )
   set text(
     lang: lang,
     region: region,
     font: font,
-    size: fontsize
+    size: fontsize,
   )
   set heading(numbering: sectionnumbering)
 
@@ -76,8 +78,14 @@
   if title != none {
     align(center)[
       #text(weight: "bold", size: 18pt)[#smallcaps(title)]
+      #if subtitle != none {
+        linebreak()
+        text(smallcaps(subtitle), size: 12pt, weight: "semibold")
+        v(10pt)
+      }
     ]
     v(-10pt)
+
   }
 
   if authors != none {
@@ -87,12 +95,12 @@
       columns: (1fr,) * ncols,
       row-gutter: 0em,
       inset: 0pt,
-      ..authors.map(author =>
-          align(center, {
-            text(size: 14pt)[#author.name]
-          }
-      )
-    )
+      ..authors.map(author => align(
+        center,
+        {
+          text(size: 14pt)[#author.name]
+        },
+      ))
     )
   }
 
@@ -104,7 +112,7 @@
 
   if abstract != none {
     block(inset: 2em)[
-    #text(weight: "semibold")[$labels.abstract$] #h(1em) #abstract
+      #text(weight: "semibold")[$labels.abstract$] #h(1em) #abstract
     ]
   }
 
@@ -117,5 +125,5 @@
 
 #set table(
   inset: 6pt,
-  stroke: none
+  stroke: none,
 )
