@@ -1,8 +1,8 @@
 ---
-title: Research Statement
+title: Research Memo
 authors:
   - Christopher T. Kenny
-header-left: Research Statement
+header-left: Research Memo
 header-right: Christopher T. Kenny
 format:
   ctk-memo-typst: default
@@ -13,6 +13,3 @@ format:
 ## More Information
 
 {{< lipsum 3 >}}
-
-
-For additional information or drafts of papers, please see [christophertkenny.com](https://christophertkenny.com).
