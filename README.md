@@ -16,5 +16,28 @@ that you can use as a starting place for your document.
 
 ## Using `ctk-memo`
 
-_TODO_: Describe how to use your format.
+This extension builds your Quarto documents using a Typst backend.
+[Typst](https://github.com/typst/typst).
 
+This template is relatively simple.
+Some options you can set:
+
+- `title`: A title of the document.
+- `authors`: Author names to use. Only names are used, not affiliations.
+- `header-left`: A left header, typically a short title
+- `header-right`: A right header, typically names or last names
+
+
+### Fonts
+
+By default, the `ctk-memo` format uses the Spectral font. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Spectral).
+
+To check that it is installed, run:
+
+```
+quarto typst fonts
+```
+
+## License
+
+This template is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
