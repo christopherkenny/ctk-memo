@@ -9,6 +9,9 @@ contributes:
         - typst-template.typ
         - typst-show.typ
       date-format: "MMMM D, YYYY"
-      mainfont: "Spectral"
+      mainfont:
+        - "Spectral"
+        - "Crimson"
+        - "Crimson Text"
       linkcolor: "#A41034"
       fontsize: 12pt
