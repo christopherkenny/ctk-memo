@@ -30,7 +30,7 @@ Some options you can set:
 
 ### Fonts
 
-By default, the `ctk-article` format uses the Spectral font. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Spectral).
+By default, the `ctk-memo` format uses the Spectral font. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Spectral).
 
 To check that it is installed, run:
 
