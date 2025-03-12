@@ -30,13 +30,19 @@ Some options you can set:
 
 ### Fonts
 
-By default, the `ctk-memo` format uses the Spectral font. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Spectral).
+By default, the `ctk-article` format uses the Spectral font. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Spectral).
 
 To check that it is installed, run:
 
 ```
 quarto typst fonts
 ```
+
+If no font by the name "Spectral" is found, it falls back to Crimson Text. This can be installed from [Google Fonts](https://fonts.google.com/specimen/Crimson+Text).
+
+If no font by the names "Spectral", "Crimson Text", or "Crimson" is found, the template falls back to Linux Libertine.
+
+This backup font of Crimson Text is chosen to look like [Cory McCartan's cmc-article](https://github.com/corymccartan/cmc-article) which uses Cochineal.
 
 ## License
 
