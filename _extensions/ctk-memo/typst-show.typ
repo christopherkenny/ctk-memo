@@ -39,7 +39,7 @@ $if(papersize)$
   paper: "$papersize$",
 $endif$
 $if(mainfont)$
-  font: ("$mainfont$",),
+  font: ($for(mainfont)$"$mainfont$",$endfor$),
 $endif$
 $if(fontsize)$
   fontsize: $fontsize$,
